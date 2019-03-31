@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage ('Build Servlet Project') {
+        stage ('Packer_Servlet_Pipeline') {
             steps {
                 /*For windows machine */
                bat  'mvn clean package'
