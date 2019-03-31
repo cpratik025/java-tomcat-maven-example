@@ -19,21 +19,21 @@ pipeline {
             }
         }
 
-        stage ('Deploy Build in Staging Area'){
+        stage ('Deploy_Servlet_Project'){
             steps{
 
-                build job : 'Deploy-StagingArea-Piple'
+                build job : 'Deploy_Servlet_Project'
 
             }
         }
 
-        stage ('Deploy to Production'){
+        stage ('Deploy_Prod'){
             steps{
                 timeout (time: 5, unit:'DAYS'){
                     input message: 'Approve PRODUCTION Deployment?'
                 }
                 
-                build job : 'Deploy-Production-Pipeline'
+                build job : 'Deploy_Prod'
             }
 
             post{
