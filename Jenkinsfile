@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage ('Deploy_Servlet_Project'){
+        stage ('DeployStagingPipeline'){
             steps{
 
                 build job : 'Deploy_Servlet_Project'
@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage ('Deploy_Prod'){
+        stage ('Deploy_ProdPipeline'){
             steps{
                 timeout (time: 5, unit:'DAYS'){
                     input message: 'Approve PRODUCTION Deployment?'
