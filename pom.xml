@@ -14,6 +14,11 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+  <groupId>com.offbytwo.jenkins</groupId>
+  <artifactId>jenkins-client</artifactId>
+  <version>0.3.8</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>java-tomcat-maven-example</finalName>
