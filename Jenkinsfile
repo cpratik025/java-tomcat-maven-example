@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent 'UX-FS'
     stages {
         stage ('Packer_Servlet_Pipeline') {
             steps {
